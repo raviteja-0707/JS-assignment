@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	   <title>Combinator selectors</title>
+	</head>
+	<style>
+	   .common-flex{
+	      display:flex
+	   }
+	   li{
+	     display:inline
+	   }
+	   #parent .nav-class{
+	   flex:10
+	   }
+	   header li{
+	      flex:1
+			}
+	   ul li{
+	      color:red
+	   }	  
+	   p{
+	      display:inline
+	   }
+	   
+	</style>
+	<body>
+	   <header id="parent" class="common-flex">
+	       <div style="display:flex">
+		      <img src="data:image/png;base64,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"/>
+		   </div>
+	       <nav class="nav-class">
+		      <ul class="common-flex">
+			    <li>Descendant</li>
+				<li>Child</li>
+				<li>Adjacent sibling</li>
+				<li>Genral sibling</li>
+			  </ul>
+		   </nav>
+		 
+	   </header>
+	   <main>
+	    <div style="width:25%;height:200px" >
+		  <h2>Descendant Selector</h2>
+		  <P>The descendant selector matches all elements that are descendants of a specified element.</p>
+	    </div>
+	    <div style="width:25%;height:200px">
+	      <h2>Child Selector</h2>
+		  <p>The child selector selects all elements that are the children of a specified element.</p>
+	    </div>
+	    <div style="width:25%;height:200px">
+	      <h2>Adjacent Sibling Selector</h2>
+		  <p>The adjacent sibling selector is used to select an element that is directly after another specific element.
+             elements must have the same parent element, and "adjacent" means "immediately following".</p>
+	    </div>
+	    <div style="width:25%;height:200px">
+	      <h2>General Sibling Selector</h2>
+		  <p>The general sibling selector selects all elements that are next siblings of a specified element.</p>
+	    </div>
+	    </main>
+	</body>
+
+</html>

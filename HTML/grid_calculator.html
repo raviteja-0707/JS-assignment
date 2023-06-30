@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Calculator</title>
+	  <style>
+	    .parent1{
+		  background-color:grey;
+		  display:grid;
+		  grid-gap:20px;
+		  padding:0px;
+		  width:500px;
+		}
+		.grid_child{
+		  background-color:white;
+		  color:black;
+		  font-size:25px;
+		  font-weight:400;
+		  text-align:center;
+		  border:2px solid red;
+		  padding:15px;
+		  margin:10px;
+		  height:15px;
+		  
+		}
+		.parent2{
+		  width:500px;
+		  display:grid;
+		  grid-template-columns:repeat(4,1fr);
+		  grid-gap:20px;
+		  padding:0px;
+		  background-color:grey;
+		}
+		
+		.parent3{
+		  display:grid;
+		  grid-template-columns:repeat(2,1fr);
+		  grid-gap:20px;
+		  padding:0px;
+		  background-color:grey;
+		  width:500px;
+		}
+		.grid_child 0{
+		 grid-column-start:1;
+		 grid-column-end:2;
+		}
+	  </style>
+   </head>
+   <body>
+      <div class="parent1">
+	     <div class="grid_child 00">00</div>
+	  </div>
+      <div class="parent parent2">	  
+	     <div class="grid_child mc">MC</div>
+		 <div class="grid_child M+">M+</div>
+		 <div class="grid_child M-">M-</div>
+		 <div class="grid_child MR">MR</div>
+	  </div>
+      <div class="parent parent2">	  
+		 <div class="grid_child C">C</div>
+		 <div class="grid_child +/-">+/-</div>
+		 <div class="grid_child /">/</div>
+		 <div class="grid_child X">X</div>
+	  </div>
+      <div class="parent parent2">	  
+		 <div class="grid_child 7">7</div>
+		 <div class="grid_child 8">8</div>
+		 <div class="grid_child 9">9</div>
+		 <div class="grid_child -">-</div>
+	  </div>
+      <div class="parent parent2">	  
+		 <div class="grid_child 4">4</div>
+		 <div class="grid_child 5">5</div>
+		 <div class="grid_child 6">6</div>
+		 <div class="grid_child +">+</div>
+	  </div >
+	  <div class="parent parent2">
+		 <div class="grid_child 1">1</div>
+		 <div class="grid_child 2">2</div>
+		 <div class="grid_child 3">3</div>
+		 <div class="grid_child =">=</div>
+	  </div>
+	  <div class="parent3">
+		 <div class="grid_child 0">0</div>
+		 <div class="grid_child .">.</div>
+	  </div>
+   </body>
+
+</html>
