@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conditional Operators</title>
-  </head>
   <body>
     <h1>Conditional Operators</h1>
     <script>
-      //var passMarks = window.prompt("Enter your marks");
+      // var passMarks = window.prompt("Enter your marks");
 
-      //if (passMarks >= 35) //{
+      // if (passMarks >= 35){
       // alert("You have Passed");
       //   } else {
       // alert("You have Failed"); }
